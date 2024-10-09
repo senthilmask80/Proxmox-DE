@@ -29,3 +29,13 @@ rm install.sh
 ## HELP keybinding:  Super + h
 If you installed a custom script above (ex. openbox), a new directory will be located at ~/scripts
 
+# Credits goes to
+
+[https://www.apalrd.net/posts/2023/pve_cloud/](https://github.com/drewgrif/bookworm-scripts)
+
+author: drewgrif
+
+
+https://github.com/Demonstrandum/Saluto
+
+author: S. F. D. Knutsen
