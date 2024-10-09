@@ -3,13 +3,13 @@
 # Function to install vanilla Openbox
 install_vanilla_openbox() {
     echo "Installing vanilla Openbox..."
-    bash ~/Downloads/bookworm-scripts/install_scripts/vanilla_openbox.sh
+    bash /tmp/Proxmox-DE/install_scripts/vanilla_openbox.sh
 }
 
 # Function to install customized Openbox
 install_custom_openbox() {
     echo "Installing customized Openbox..."
-    bash ~/Downloads/bookworm-scripts/install_scripts/custom_openbox.sh
+    bash /tmp/Proxmox-DE/install_scripts/custom_openbox.sh
 }
 
 
