@@ -80,7 +80,6 @@
     binutils
     fonts-noto
     dnsutils
-    slim
     ristretto
     gmrun
     numlockx
