@@ -89,4 +89,3 @@
     dbus-x11
     hsetroot
     qt5-style-plugins
-    lightdm
