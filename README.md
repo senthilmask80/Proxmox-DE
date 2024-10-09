@@ -15,9 +15,7 @@ Within the install.sh file, you can choose to install the following window manag
 # Installation
 
 ``` 
-wget -O /tmp/install.sh https://github.com/senthilmask80/Proxmox-DE/blob/main/install.sh
-
-cd /tmp/
+wget https://github.com/senthilmask80/Proxmox-DE/blob/main/install.sh
 
 chmod +x install.sh
 
