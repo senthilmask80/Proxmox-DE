@@ -26,7 +26,7 @@ echo "Git is installed. Continuing with the script..."
 
 
 # Clone the repository into the home directory
-#git clone https://github.com/drewgrif/bookworm-scripts /tmp/Proxmox-DE
+git clone https://github.com/drewgrif/bookworm-scripts /tmp/Proxmox-DE
 
 clear
 
