@@ -29,8 +29,11 @@ install_packages() {
     # Install missing packages
     if [ ${#missing_pkgs[@]} -gt 0 ]; then
         echo "Installing missing packages: ${missing_pkgs[@]}"
-        sudo apt update
+        sudo apt update -y;
+        sudo apt upgrade -y;
         sudo apt install -y "${missing_pkgs[@]}"
+        sudo apt clean;
+        sudo apt autoclean;
         if [ $? -ne 0 ]; then
             echo "Failed to install some packages. Exiting."
             exit 1
@@ -43,27 +46,37 @@ install_packages() {
 # Call function to install packages
 install_packages "${packages[@]}";
 echo "The default packages is installation"
+clear
 install_packages "${x11_packages[@]}";
 echo "The x11 packages is installation"
+clear
 install_packages "${basic_packages[@]}";
 echo "The basic packages is installation"
+clear
 install_packages "${dbus_packages[@]}";
 echo "The dbus-x11 packages is installation"
+clear
 install_packages "${zip_packages[@]}";
 echo "The zip packages is installation"
+clear
 install_packages "${utils_packages[@]}";
 echo "The utils packages is installation"
+clear
 install_packages "${extra_packages[@]}";
 echo "The extra packages is installation"
+clear
 install_packages "${audio_packages[@]}";
 echo "The audio packages is installation"
+clear
 install_packages "${themes_packages[@]}";
 echo "The themes packages is installation"
+clear
 install_packages "${geany_packages[@]}";
 echo "The geany packages is installation"
+clear
 install_packages "${fonts_packages[@]}";
 echo "The fonts packages is installation"
-
+clear
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
@@ -73,20 +86,23 @@ mkdir -p ~/Screenshots/
 mkdir -p ~/.themes/
 
 SCRIPT_DIR=/tmp/Proxmox-DE
-
+clear
 echo "The obmenu packages is installation"
 bash /tmp/Proxmox-DE/install_scripts/obmenu.sh
 
+clear
 echo "The vue-cli packages is installation"
 bash /tmp/Proxmox-DE/install_packages/vue-cli.sh
 
+clear
 echo "The webkit-lightdm packages is installation"
 bash /tmp/Proxmox-DE/webkit-lightdm/Saluto/install.sh
 
 # check FT-Labs picom and nerdfonts are installed
+clear
 echo "The picom packages is installation"
 bash /tmp/Proxmox-DE/install_scripts/picom.sh
-
+clear
 echo "The nerdfonts packages is installation"
 bash /tmp/Proxmox-DE/install_scripts/nerdfonts.sh
 
