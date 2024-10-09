@@ -31,7 +31,7 @@ If you installed a custom script above (ex. openbox), a new directory will be lo
 
 # Credits goes to
 
-[https://www.apalrd.net/posts/2023/pve_cloud/](https://github.com/drewgrif/bookworm-scripts)
+https://github.com/drewgrif/bookworm-scripts
 
 author: drewgrif
 
