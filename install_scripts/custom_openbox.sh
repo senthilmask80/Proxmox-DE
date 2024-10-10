@@ -98,18 +98,9 @@ clear
 echo "The webkit-lightdm packages is installation"
 bash /tmp/Proxmox-DE/webkit-lightdm/Saluto/install.sh
 
-# check FT-Labs picom and nerdfonts are installed
 clear
-echo "The picom packages is installation"
-bash /tmp/Proxmox-DE/install_scripts/picom.sh
-clear
-echo "The nerdfonts packages is installation"
-bash /tmp/Proxmox-DE/install_scripts/nerdfonts.sh
-
-# adding gtk theme and icon theme
-bash /tmp/Proxmox-DE/colorschemes/blue.sh
-mv ~/.config/openbox/Simply_Circles_Dark ~/.themes
-git clone https://github.com/addy-dclxvi/openbox-theme-collections ~/.themes
+dpkg -i /tmp/Proxmox-DE/webkit-lightdm/lightdm-webkit2-greeter.deb
+apt install -f
 
 # moving custom config
 cp -rf /tmp/Proxmox-DE/dataconfig/openbox/* ~/.config/openbox/.
@@ -125,3 +116,16 @@ sudo cp -rf /tmp/Proxmox-DE/dataconfig/lightdm/lightdm.conf /etc/lightdm/lightdm
 sudo cp -rf /tmp/Proxmox-DE/dataconfig/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 sudo cp -rf /tmp/Proxmox-DE/dataconfig/lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf
 #\ncp -r /tmp/Proxmox-DE/datalocal/local/bin ~/.local/bin/
+
+# check FT-Labs picom and nerdfonts are installed
+clear
+echo "The picom packages is installation"
+bash /tmp/Proxmox-DE/install_scripts/picom.sh
+clear
+echo "The nerdfonts packages is installation"
+bash /tmp/Proxmox-DE/install_scripts/nerdfonts.sh
+
+# adding gtk theme and icon theme
+bash /tmp/Proxmox-DE/colorschemes/blue.sh
+mv ~/.config/openbox/Simply_Circles_Dark ~/.themes
+git clone https://github.com/addy-dclxvi/openbox-theme-collections ~/.themes
