@@ -24,6 +24,7 @@ cd ~/Downloads
 git clone https://github.com/trizen/obmenu-generator.git
 cd obmenu-generator
 cpan -i DATA::DUMP
+curl -L http://cpanmin.us | perl - --sudo Data::Dump
 cp obmenu-generator ~/.local/bin/
 cp schema.pl ~/.config/obmenu-generator
 
