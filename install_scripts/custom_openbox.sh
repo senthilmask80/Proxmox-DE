@@ -4,7 +4,7 @@
 packages=("openbox" "tint2" "terminator" "firefox-esr" "xfce4-appfinder" "xorg" "xinit" "dialog" "menu" "obconf" "xfce4-power-manager")
 x11_packages=("xserver-xorg" "xbacklight" "xbindkeys" "xvkbd" "xinput" "xdotool" "xcompmgr" "lxappearance" "lxappearance-obconf" "feh" "redshift")
 basic_packages=("build-essential" "aptitude" "apt-transport-https" "software-properties-common" "gnupg" "ca-certificates")
-dbus_packages=("policykit-1-gnome" "network-manager" "network-manager-gnome" "avahi-daemon" "acpi" "acpid" "gvfs-backends" "libgtk-3-dev" "connman" "connman-gtk" "binutils")
+dbus_packages=("policykit-1-gnome" "network-manager" "network-manager-gnome" "avahi-daemon" "acpi" "acpid" "gvfs-backends" "libgtk-3-dev" "binutils" "dnsutils")
 zip_packages=("unzip" "p7zip" "zip")
 utils_packages=("thunar" "thunar-archive-plugin" "thunar-volman" "mtools" "dosfstools" "rofi" "dunst" "libnotify-bin" "htop" "xscreensaver-gl-extra" "xscreensaver-data-extra" "autoconf" "dnsutils")
 extra_packages=("file-roller" "exa" "scrot" "libnotify-dev" "micro" "xclip" "nitrogen" "simplescreenrecorder" "ristretto" "gmrun" "numlockx" "conky" "slick-greeter" "cairo-dock" "dbus-x11" "hsetroot" "qt5-style-plugins")
