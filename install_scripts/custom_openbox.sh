@@ -112,11 +112,16 @@ mv ~/.config/openbox/Simply_Circles_Dark ~/.themes
 git clone https://github.com/addy-dclxvi/openbox-theme-collections ~/.themes
 
 # moving custom config
-cp -rf /tmp/Proxmox-DE/dataconfig/openbox ~/.config/
-cp -rf /tmp/Proxmox-DE/dataconfig/tint2/ ~/.config/
-cp -rf /tmp/Proxmox-DE/dataconfig/dunst/ ~/.config/
-cp -rf /tmp/Proxmox-DE/dataconfig/picom/ ~/.config/
-cp -rf /tmp/Proxmox-DE/dataconfig/kitty/ ~/.config/
-cp -rf /tmp/Proxmox-DE/dataconfig/backgrounds/ ~/.config/
-sudo cp -rf /tmp/Proxmox-DE/dataconfig/lightdm/ /etc/lightdm/
+cp -rf /tmp/Proxmox-DE/dataconfig/openbox/* ~/.config/openbox/.
+cp -rf /tmp/Proxmox-DE/dataconfig/tint2/* ~/.config/tint2/.
+cp -rf /tmp/Proxmox-DE/dataconfig/dunst/* ~/.config/dunst/.
+cp -rf /tmp/Proxmox-DE/dataconfig/picom/* ~/.config/picom/.
+cp -rf /tmp/Proxmox-DE/dataconfig/kitty/* ~/.config/kitty/.
+cp -rf /tmp/Proxmox-DE/dataconfig/backgrounds ~/.config/.
+sudo mv -rf /etc/lightdm/lightdm.conf /etc/lightdm/lightdm.conf.bak1
+sudo mv -rf /etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf.bak1
+sudo mv -rf /etc/lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf.bak1
+sudo cp -rf /tmp/Proxmox-DE/dataconfig/lightdm/lightdm.conf /etc/lightdm/lightdm.conf
+sudo cp -rf /tmp/Proxmox-DE/dataconfig/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+sudo cp -rf /tmp/Proxmox-DE/dataconfig/lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf
 #\ncp -r /tmp/Proxmox-DE/datalocal/local/bin ~/.local/bin/
