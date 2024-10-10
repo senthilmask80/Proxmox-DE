@@ -92,7 +92,7 @@ bash /tmp/Proxmox-DE/install_scripts/obmenu.sh
 
 clear
 echo "The vue-cli packages is installation"
-bash /tmp/Proxmox-DE/install_packages/vue-cli.sh
+bash /tmp/Proxmox-DE/install_scripts/vue-cli.sh
 
 clear
 echo "The webkit-lightdm packages is installation"
