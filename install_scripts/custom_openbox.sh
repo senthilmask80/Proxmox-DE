@@ -9,7 +9,7 @@ zip_packages=("unzip" "p7zip" "zip")
 utils_packages=("thunar" "thunar-archive-plugin" "thunar-volman" "mtools" "dosfstools" "rofi" "dunst" "libnotify-bin" "htop" "xscreensaver-gl-extra" "xscreensaver-data-extra" "autoconf" "dnsutils")
 extra_packages=("file-roller" "exa" "scrot" "libnotify-dev" "micro" "xclip" "nitrogen" "simplescreenrecorder" "ristretto" "gmrun" "numlockx" "conky" "slick-greeter" "cairo-dock" "dbus-x11" "hsetroot" "qt5-style-plugins")
 audio_packages=("pulseaudio" "pavucontrol" "volumeicon-alsa" "pamixer" "pulsemixer")
-themes_packages=("papirus-icon-theme" "arc-theme" "moka-icon-theme")
+themes_packages=("papirus-icon-theme" "arc-theme" "moka-icon-theme" "imagemagick")
 geany_packages=("geany" "geany-plugin-addons" "geany-plugin-git-changebar" "geany-plugin-spellcheck" "geany-plugin-treebrowser" "geany-plugin-markdown" "geany-plugin-insertnum" "geany-plugin-lineoperations" "geany-plugin-automark")
 fonts_packages=("fonts-recommended" "fonts-font-awesome" "fonts-terminus" "fonts-noto")
 
