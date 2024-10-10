@@ -10,7 +10,7 @@ THEME_INSTALL_DIR="/usr/share/lightdm-webkit/themes/saluto"
 
 if [ -d "$THEME_INSTALL_DIR" ]; then
     echo "$ARROW Removing old copy of LightDM theme..."
-    echo "  You might need a password for this."
+    echo "  You might neyed a password for this."
     sudo rm -rf "$THEME_INSTALL_DIR"
     echo "Done."
 fi
@@ -82,6 +82,7 @@ Pictures/wallpaper"
     # Copy to /usr/share.
     echo "$ARROW Copying wallpapers to /usr/share/backgrounds..."
     echo "  You might need to give your password for this one."
+    mkdir -p /usr/share/backgrounds
     sudo cp -rf "$WALL_ASSETS"/* /usr/share/backgrounds
 
     IFS="$IFS_OLD"
