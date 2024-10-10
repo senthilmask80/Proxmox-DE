@@ -3,7 +3,7 @@ sudo apt clean
 sudo apt autoclean
 sudo apt -y autoremove 
 sudo apt install -y perl
-#sudo apt install -y perl-doc
+sudo apt install -y perl-doc
 sudo apt install -y libgtk3-perl
 sudo apt install -y libmodule-build-perl
 
