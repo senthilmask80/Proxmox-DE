@@ -112,10 +112,11 @@ mv ~/.config/openbox/Simply_Circles_Dark ~/.themes
 git clone https://github.com/addy-dclxvi/openbox-theme-collections ~/.themes
 
 # moving custom config
-\ncp -r /tmp/Proxmox-DE/dataconfig/openbox/ ~/.config/
-\ncp -r /tmp/Proxmox-DE/dataconfig/tint2/ ~/.config/
-\ncp -r /tmp/Proxmox-DE/dataconfig/dunst/ ~/.config/
-\ncp -r /tmp/Proxmox-DE/dataconfig/picom/ ~/.config/
-\ncp -r /tmp/Proxmox-DE/dataconfig/kitty/ ~/.config/
-\ncp -r /tmp/Proxmox-DE/dataconfig/backgrounds/ ~/.config/
+cp -rf /tmp/Proxmox-DE/dataconfig/openbox ~/.config/
+cp -rf /tmp/Proxmox-DE/dataconfig/tint2/ ~/.config/
+cp -rf /tmp/Proxmox-DE/dataconfig/dunst/ ~/.config/
+cp -rf /tmp/Proxmox-DE/dataconfig/picom/ ~/.config/
+cp -rf /tmp/Proxmox-DE/dataconfig/kitty/ ~/.config/
+cp -rf /tmp/Proxmox-DE/dataconfig/backgrounds/ ~/.config/
+sudo cp -rf /tmp/Proxmox-DE/dataconfig/lightdm/ /etc/lightdm/
 #\ncp -r /tmp/Proxmox-DE/datalocal/local/bin ~/.local/bin/
