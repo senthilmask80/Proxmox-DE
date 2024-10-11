@@ -23,7 +23,7 @@ export PATH="$HOME/.local/bin:$PATH"
 cd ~/Downloads
 git clone https://github.com/trizen/obmenu-generator.git
 cd obmenu-generator
-cpan -i DATA::DUMP
+cpan -i Data::Dump
 curl -L http://cpanmin.us | perl - --sudo Data::Dump
 cp obmenu-generator ~/.local/bin/
 cp schema.pl ~/.config/obmenu-generator
