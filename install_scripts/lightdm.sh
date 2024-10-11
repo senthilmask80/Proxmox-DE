@@ -41,9 +41,10 @@ check_slim() {
 install_lightdm() {
     echo "Installing LightDM (recommended)..."
     sudo apt update
-    sudo apt install -y lightdm
+    sudo apt install -y lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
     sudo systemctl enable lightdm
     echo "LightDM has been installed and enabled."
+    
 }
 
 # Function to install and enable GDM3
