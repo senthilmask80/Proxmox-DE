@@ -91,16 +91,22 @@ echo "The obmenu packages is installation"
 bash /tmp/Proxmox-DE/install_scripts/obmenu.sh
 
 clear
+dpkg -i /tmp/Proxmox-DE/webkit-lightdm/web-greeter-3.5.3-debian.deb
+apt install -f
+dpkg -i /tmp/Proxmox-DE/webkit-lightdm/web-greeter-3.5.3-debian.deb
+
+clear
+dpkg -i /tmp/Proxmox-DE/webkit-lightdm/lightdm-webkit2-greeter.deb
+apt install -f
+dpkg -i /tmp/Proxmox-DE/webkit-lightdm/lightdm-webkit2-greeter.deb
+
+clear
 echo "The vue-cli packages is installation"
 bash /tmp/Proxmox-DE/install_scripts/vue-cli.sh
 
 clear
 echo "The webkit-lightdm packages is installation"
 bash /tmp/Proxmox-DE/webkit-lightdm/Saluto/install.sh
-
-#clear
-#dpkg -i /tmp/Proxmox-DE/webkit-lightdm/lightdm-webkit2-greeter.deb
-#apt install -f
 
 # moving custom config
 \cp -rf /tmp/Proxmox-DE/dataconfig/openbox ~/.config/
