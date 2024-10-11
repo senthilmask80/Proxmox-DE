@@ -103,12 +103,12 @@ bash /tmp/Proxmox-DE/webkit-lightdm/Saluto/install.sh
 #apt install -f
 
 # moving custom config
-cp -rf /tmp/Proxmox-DE/dataconfig/openbox/* ~/.config/openbox/.
-cp -rf /tmp/Proxmox-DE/dataconfig/tint2/* ~/.config/tint2/.
-cp -rf /tmp/Proxmox-DE/dataconfig/dunst/* ~/.config/dunst/.
-cp -rf /tmp/Proxmox-DE/dataconfig/picom/* ~/.config/picom/.
-cp -rf /tmp/Proxmox-DE/dataconfig/kitty/* ~/.config/kitty/.
-cp -rf /tmp/Proxmox-DE/dataconfig/backgrounds ~/.config/.
+\cp -rf /tmp/Proxmox-DE/dataconfig/openbox ~/.config/
+\cp -rf /tmp/Proxmox-DE/dataconfig/tint2 ~/.config/
+\cp -rf /tmp/Proxmox-DE/dataconfig/dunst ~/.config/
+\cp -rf /tmp/Proxmox-DE/dataconfig/picom ~/.config/
+\cp -rf /tmp/Proxmox-DE/dataconfig/kitty ~/.config/
+\cp -rf /tmp/Proxmox-DE/dataconfig/backgrounds ~/.config/
 #\ncp -r /tmp/Proxmox-DE/datalocal/local/bin ~/.local/bin/
 
 # check FT-Labs picom and nerdfonts are installed
