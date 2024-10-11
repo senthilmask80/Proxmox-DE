@@ -44,7 +44,12 @@ install_lightdm() {
     sudo apt install -y lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
     sudo systemctl enable lightdm
     echo "LightDM has been installed and enabled."
-    
+    sudo mv -rf /etc/lightdm/lightdm.conf /etc/lightdm/lightdm.conf.bak1
+    sudo mv -rf /etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf.bak1
+    sudo mv -rf /etc/lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf.bak1
+    sudo cp -rf /tmp/Proxmox-DE/dataconfig/lightdm/lightdm.conf /etc/lightdm/lightdm.conf
+    sudo cp -rf /tmp/Proxmox-DE/dataconfig/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+    sudo cp -rf /tmp/Proxmox-DE/dataconfig/lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf
 }
 
 # Function to install and enable GDM3
