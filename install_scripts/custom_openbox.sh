@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # Main list of packages
-packages=("openbox" "tint2" "terminator" "firefox-esr" "xfce4-appfinder" "xorg" "xinit" "dialog" "menu" "obconf" "xfce4-power-manager")
-x11_packages=("xserver-xorg" "xbacklight" "xbindkeys" "xvkbd" "xinput" "xdotool" "xcompmgr" "lxappearance" "lxappearance-obconf" "feh" "redshift")
+packages=("openbox" "tint2" "terminator" "firefox-esr" "xfce4-appfinder" "xorg" "xinit" "dialog" "menu" "obconf" "xfce4-power-manager" "acpid" "xdg-user-dirs")
+x11_packages=("xserver-xorg" "xserver-common" "xserver-xephyr" "xbacklight" "xbindkeys" "xvkbd" "xinput" "xdotool" "xcompmgr" "lxappearance" "lxappearance-obconf" "feh" "redshift")
 basic_packages=("build-essential" "aptitude" "apt-transport-https" "software-properties-common" "gnupg" "ca-certificates")
+lightdm_packages=("lightdm" "lightdm-settings" "lightdm-gtk-greeter" "lightdm-gtk-greeter-settings" "gnome-common" "liblightdm-gobject-dev" "libgtk-3-dev" "libwebkit2gtk-4.0-dev" "libdbus-glib-1-dev")
 dbus_packages=("policykit-1-gnome" "network-manager" "network-manager-gnome" "avahi-daemon" "acpi" "acpid" "gvfs-backends" "libgtk-3-dev" "binutils" "dnsutils")
 zip_packages=("unzip" "p7zip" "zip")
 utils_packages=("thunar" "thunar-archive-plugin" "thunar-volman" "mtools" "dosfstools" "rofi" "dunst" "libnotify-bin" "htop" "xscreensaver-gl-extra" "xscreensaver-data-extra" "autoconf" "dnsutils")
@@ -53,6 +54,9 @@ clear
 install_packages "${basic_packages[@]}";
 echo "The basic packages is installation"
 clear
+install_packages "${lightdm_packages[@]}";
+echo "The basic packages is installation"
+clear
 install_packages "${dbus_packages[@]}";
 echo "The dbus-x11 packages is installation"
 clear
@@ -77,13 +81,20 @@ clear
 install_packages "${fonts_packages[@]}";
 echo "The fonts packages is installation"
 clear
-sudo systemctl enable avahi-daemon
-sudo systemctl enable acpid
+
+sudo systemctl is-active --quiet avahi-daemon
+sudo systemctl is-enabled --quiet avahi-daemon
+sudo systemctl is-active --quiet acpid
+sudo systemctl is-enabled --quiet acpid
+sudo systemctl is-active --quiet lightdm
+sudo systemctl is-enabled --quiet lightdm
 
 xdg-user-dirs-update
 
 mkdir -p ~/Screenshots/
 mkdir -p ~/.themes/
+mkdir -p /usr/share/backgrounds
+
 
 SCRIPT_DIR=/tmp/Proxmox-DE
 clear
@@ -99,6 +110,8 @@ clear
 dpkg -i /tmp/Proxmox-DE/webkit-lightdm/lightdm-webkit2-greeter.deb
 apt install -f
 dpkg -i /tmp/Proxmox-DE/webkit-lightdm/lightdm-webkit2-greeter.deb
+
+chmod -R 755 /usr/share/lightdm-webkit/themes/
 
 clear
 echo "The vue-cli packages is installation"
