@@ -1,91 +1,92 @@
-    xorg
-    xserver-xorg
-    xbacklight
-    xbindkeys
-    xvkbd
-    xinput
-    xinit
-    dialog
-    menu
-    build-essential
-    aptitude
-    apt-transport-https
-    software-properties-common
-    gnupg
-    ca-certificates
-    policykit-1-gnome 
-    network-manager 
-    network-manager-gnome
-    thunar
-    thunar-archive-plugin
-    thunar-volman
-    file-roller
-    lxappearance
-    lxappearance-obconf
-    obconf
-    mtools 
-    dosfstools 
-    avahi-daemon 
-    acpi
-    acpid 
-    gvfs-backends 
-    xfce4-power-manager
-    pulseaudio
-    pavucontrol
-    volumeicon-alsa
-    pamixer
-    pulsemixer
-    feh
-    fonts-recommended 
-    fonts-font-awesome
-    fonts-terminus 
-    papirus-icon-theme
-    exa
-    scrot
-    rofi
-    dunst
-    libnotify-bin
-    xdotool
-    unzip
-    libnotify-dev
-    micro
-    geany
-    geany-plugin-addons 
-    geany-plugin-git-changebar 
-    geany-plugin-spellcheck 
-    geany-plugin-treebrowser
-    geany-plugin-markdown
-    geany-plugin-insertnum
-    geany-plugin-lineoperations
-    geany-plugin-automark
-    redshift
-    xclip
-    p7zip
-    htop
-    nitrogen
-    xcompmgr
-    zip
-    xscreensaver-gl-extra
-    xscreensaver-data-extra
-    simplescreenrecorder
-    autoconf
-    libgtk-3-dev
-    simple-scan
-    neofetch
-    arc-theme
-    arc-theme
-    moka-icon-theme
-    connman
-    connman-gtk
-    binutils
-    fonts-noto
-    dnsutils
-    ristretto
-    gmrun
-    numlockx
-    conky
-    slick-greeter
-    cairo-dock
-    dbus-x11
-    hsetroot
-    qt5-style-plugins
+bash
+bash-completion
+tar
+bat
+tree
+multitail
+fastfetch
+fontconfig
+build-essential
+aptitude
+apt-transport-https
+software-properties-common
+gnupg
+ca-certificates
+openbox
+tint2
+terminator
+firefox-esr
+xfce4-appfinder
+xorg
+xinit
+dialog
+menu
+obconf
+xfce4-power-manager
+acpi
+acpid
+autoconf
+libnotify-bin
+dosfstools
+mtools
+xdg-user-dirs
+xserver-xorg
+xserver-common
+xserver-xephyr
+xbacklight
+xbindkeys
+xvkbd
+xinput
+xdotool
+xcompmgr
+lxappearance
+lxappearance-obconf
+feh
+redshift
+lightdm
+lightdm-settings
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+slick-greeter
+#gnome-common
+#liblightdm-gobject-dev
+#libgtk-3-dev
+#libwebkit2gtk-4.0-dev
+#libdbus-glib-1-dev
+policykit-1-gnome
+network-manager
+network-manager-gnome
+avahi-daemon
+gvfs-backends
+binutils
+dnsutils
+rofi
+dunst
+fileroller
+unzip
+p7zip
+zip
+exa
+scrot
+xclip
+nitrogen
+ristretto
+gmrun
+numlockx
+dbus-x11
+hsetroot
+qt5-style-plugin
+htop
+xscreensaver-gl-extra
+xscreensaver-data-extra
+conky
+cairo-dock
+pulseaudio
+pavucontrol
+volumeicon-alsa
+pamixer
+pulsemixer
+fonts-recommended
+fonts-font-awesome
+fonts-terminus
+fonts-noto
