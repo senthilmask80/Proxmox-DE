@@ -52,8 +52,9 @@ clear
 echo "Make sure a Display Manager is installed"
 
 # add bashrc question
-bash /tmp/Proxmox-DE/install_scripts/add_bashrc.sh
-
+git clone --depth=1 https://github.com/ChrisTitusTech/mybash.git /tmp/mybash
+bash chmod +x /tmp/mybash/setup.sh
+bash /tmp/mybash/setup.sh
 clear 
 
 sudo apt autoremove
