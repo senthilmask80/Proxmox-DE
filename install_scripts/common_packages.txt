@@ -4,8 +4,11 @@ tar
 bat
 tree
 multitail
+zoxide
+trash-cli
+fzf
 fastfetch
-fontconfig
+#fontconfig
 build-essential
 aptitude
 apt-transport-https
